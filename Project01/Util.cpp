@@ -5,7 +5,6 @@
 using namespace std;
 
 void random_init(int* vector, int size, int min, int max) {
-	srand(time(NULL));
 
 	for (int i = 0; i < size; i++)
 	{

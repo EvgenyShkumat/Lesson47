@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 using namespace std;
 
 void random_init(int* vector, int size, int min, int max);
@@ -6,6 +7,8 @@ string output(int* vector, int size);
 int find_richest(int** prices, int* cars, int length);
 
 int main() {
+	srand(time(NULL));
+
 	int count_showroom = 4;
 	string* names = new string[count_showroom];
 
