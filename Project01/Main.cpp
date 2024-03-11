@@ -41,11 +41,11 @@ int main() {
 
 	for (size_t i = 0; i < count_showroom; i++)
 	{
-		msg += output(*(prices + i), *(cars + i)) + "\n";
+		msg += *(names + i) + ": " + output(*(prices + i), *(cars + i)) + "\n";
 	}
 
 	cout << endl << msg;
-	cout << "Richest: " << find_richest(prices, cars, count_showroom);
+	cout << "Richest: " << *(names + find_richest(prices, cars, count_showroom));
 
 	for (int i = 0; i < count_showroom; i++)
 	{
