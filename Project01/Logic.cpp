@@ -15,7 +15,7 @@ int find_richest(int** prices, int* cars, int length) {
 	for(int i = 0; i < length; i++){
 		int total = find_sum(*(prices + i), *(cars + i));
 
-		if(total > find_sum(*(prices + max_index), *(length + max_index))){
+		if(total > find_sum(*(prices + max_index), *(cars + max_index))){
 			max_index = i;
 		}
 	}
